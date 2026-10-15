@@ -1,21 +1,23 @@
 # compression-lab
 
-Compara pixels RGB, quantização RGB332 e codificação RLE.
+Compare source pixels with RGB332 quantization and run-length encoding (RLE). The app shows the resulting image and byte counts.
 
-## Desktop
+## Run
 
-```sh
+Requires the .NET 10 SDK. Browser builds also need the WebAssembly workload: `dotnet workload install wasm-tools`.
+
+### Desktop
+
+~~~sh
 dotnet run --project CompressionLab.Desktop/CompressionLab.Desktop.csproj
-```
+~~~
 
-## Browser
+### Browser
 
-Requer o workload wasm-tools do .NET 10.
-
-```sh
+~~~sh
 dotnet run --project CompressionLab.Browser/CompressionLab.Browser.csproj
-```
+~~~
 
-## Exemplo
+## Example
 
-Execute a compressão e compare os bytes estimados e a imagem quantizada.
+Run the compression demo and compare the image and byte counts.
